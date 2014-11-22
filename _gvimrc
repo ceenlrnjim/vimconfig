@@ -1,0 +1,75 @@
+source $vim/_common
+
+"Display 50 lines + status line
+set lines=51
+
+
+"Set gui options to:
+" g: gray inactive menu items
+" m: display menu bar
+" r: display scrollbar on right side
+" b: display scrollbar at bottom
+" t: enable tearoff menus
+" T: enable toolbar
+"TODO:set guioptions=mrb
+set guioptions=rb
+
+"set guifont=courier_new:h9
+
+"# of lines to keep above and below the cursor
+set scrolloff=3
+"# of lines to scroll when cursor gets off the screen
+"set scrolljump=5
+
+"Display current line and column number
+set ruler
+
+"New guicursor setting
+set guicursor=n-v-c-o:block-Cursor,r-cr-i-ci:hor20-Cursor,sm:block-Cursor-blinkwait175-blinkoff150-blinkon175
+
+" Hide the mouse pointer while typing
+set mousehide
+
+"Right mouse button extends a selection
+set mousemodel=extend
+"Right mouse button brings up popup menu
+"set mousemodel=popup
+
+"use tab to indent
+vmap <tab> >gv
+vmap <s-tab> <gv
+
+"Switch on syntax highlighting.
+set background=dark
+
+"Don't show C++ keywords as errors
+let java_allow_cpp_keywords=1
+
+set gfn=Lucida_Console:h10:cANSI
+color moria
+
+"Set my custom macros
+map <S-F1> :simalt ~x<CR>
+map <S-F2> :simalt ~r<CR>
+map <F3> :exe "Spt " . expand("<cword>")<CR>
+"map <F3> <C-W>}
+"map <F4> <C-W>z
+map <F5> ^i//<esc>j
+map <S-F5> ^i/*<ESC>
+map <C-F5> A*/<ESC>
+map <F6> ^2xj
+map <S-F6> ^2x
+map <C-F6> $xx
+map <F7> /TODO<CR>
+map <F9> [I
+map <S-F9> :sp<CR>gd<C-W>j
+
+
+" maximize the window when opening
+au GUIEnter * simalt ~x
+
+
+set tbs
+"set mousef
+set shortmess=a
+
