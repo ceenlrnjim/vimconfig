@@ -14,8 +14,6 @@ set lines=51
 "TODO:set guioptions=mrb
 set guioptions=rb
 
-"set guifont=courier_new:h9
-
 "# of lines to keep above and below the cursor
 set scrolloff=3
 "# of lines to scroll when cursor gets off the screen
@@ -45,7 +43,7 @@ set background=dark
 "Don't show C++ keywords as errors
 let java_allow_cpp_keywords=1
 
-set gfn=Lucida_Console:h10:cANSI
+set gfn=Lucida_Console:h9:cANSI
 color moria
 
 "Set my custom macros
