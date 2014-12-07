@@ -4,6 +4,8 @@
 set nocompatible
 set ch=2
 
+set enc=utf-8
+
 " fix shell commands
 set sh=cmd.exe
 set shcf=/C
