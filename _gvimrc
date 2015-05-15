@@ -71,3 +71,5 @@ set tbs
 "set mousef
 set shortmess=a
 
+" turn on and off presentation mode
+source $VIM/vimfiles/presmode.vim
