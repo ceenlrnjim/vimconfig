@@ -1,5 +1,5 @@
 function PresMode()
-    set gfn=Lucida_Console:h24:cANSI
+    set gfn=Lucida_Console:h18:cANSI
 endfunction
 
 function NoPresMode()

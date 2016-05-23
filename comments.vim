@@ -47,3 +47,12 @@ au!
 au bufreadpost,filereadpost *.clj map <F5> ^i;<ESC>j
 au bufreadpost,filereadpost *.clj map <F6> ^xj
 augr end
+
+augr cStyle
+au bufreadpost,filereadpost *.js,*.java,*.c,*.cs map <F5> ^i//<esc>j
+au bufreadpost,filereadpost *.js,*.java,*.c,*.cs map <S-F5> ^i/*<ESC>
+au bufreadpost,filereadpost *.js,*.java,*.c,*.cs map <C-F5> A*/<ESC>
+au bufreadpost,filereadpost *.js,*.java,*.c,*.cs map <F6> ^2xj
+au bufreadpost,filereadpost *.js,*.java,*.c,*.cs map <S-F6> ^2x
+au bufreadpost,filereadpost *.js,*.java,*.c,*.cs map <C-F6> $xx
+augr end
